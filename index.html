@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba771b7ff1.js" crossorigin="anonymous"></script>
+    <title>Portfolio Task</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        </div>
+        <nav>
+            <img src="./Logo.PNG" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#section">About</a></li>
+                <li><a href="#container-c">contact me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#container">References</a></li>
+            </ul>
+        </nav>
+        <div class="text">
+            <p>Musician/Developer</p>
+            <h1>Hello <bd>Everyone</bd>,<br> I am <span> Pradeep Koirala</span></h1>
+        </div>
+        </div>
+        <!--About Section-->
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------     
+    <div id="section">
+        <div class="hero">
+            <article>
+                <h1>About Me</h1>
+                <img src="./Myself.JPG"weidth="500px" height="500px">
+                <p>
+                    Hello evreryone, I am Pradeep Koirala and I was passionate about various programming language since my chilhood, Talking about my chilhood I was born and raised in Jhapa
+                    Currently I am living in Gokarneshwar Kathmandu for my further Education.As a first-year student at Herald College Kathmandu, I have aspirations to become a successful web developer in the future. I am determined and believe that my dedication and abilities will help me attain my goal. 
+                </p>
+            </article>
+            <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Experience')">Hobbies</p>
+                <p class="tab-links" onclick="opentab('Band')">Band</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li>Singing</li>
+                    <li>Fast Learner</li>
+                    <li>communication skill</li>
+                    <li>Ability to work under pressure</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+                <ul>
+                    <li>Trekking</li>
+                    <li>Coding</li>
+                    <li>Playing Guitar</li>
+                    <li>Swimming</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Band">
+                <p> I was a member of a musical group called Beginners Band,<br> and during my time with the band we performed at 100 bar gigs and one concert during my teenage years.</p>
+            </div>
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+            
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+            </script>
+        </div>
+        ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+             <!--Education-->
+             <div id="education">
+                <div class="container">
+                    <h1 class="sub-title">Education</h1>
+                    <div class="education-list">
+                        <div>
+                            <i class="fa-solid fa-school"></i>
+                            <h2>SEE</h2>
+                            <p> I have completed my SEE Level from Wonderland English Boarding School Jhapa, Nepal</p>
+                            <a href="#">More</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-school"></i>
+                            <h2>+2</h2>
+                            <p> I have completed my +2 Level from Global Educational Academy Jhapa, Nepal</p>
+                            <a href="#">More</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-school"></i>
+                             <h2>Bachelor</h2>
+                            <p> I am doing my Bachelors Degree at Herald College Kathmandu
+                            </p>
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                </div>
+               </div>
+        <!--Contact Me-->
+        ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+        <div id="container-c">
+            <h1> Contact Me</h1>
+            <p> Feel free to connect with me</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send your Message</h3>
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Pradeep">
+                            </div>
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder="9808070902">
+                            </div>
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="text" placeholder="Contact@gmail.com">
+                            </div>
+                            <div class="input-group">
+                                <label>Address</label>
+                                <input type="text" placeholder="Kathmandu, Nepal">
+                            </div>
+                        </div>
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+                        <button type="Submit">Submit</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Me</h3>
+                    <table>
+                        <tr>
+                            <td><i class="fa-sharp fa-regular fa-envelope"></i> Email</td>
+                            <td>PradeepKoirala07@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-thin fa-phone"></i> Phone Number</td>
+                            <td>+977 9863594520</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-location-dot"></i> Address</td>
+                            <td>Gokarneshowr Kathmandu, Nepal</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-share"></i> Socials</td>
+                            <td><a href="https://www.facebook.com/profile.php?id=100035094229832&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a> <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Finstagram.com%2Fpradeeep_koiralaaaa%3Figshid%3DYmMyMTA2M2Y%253D&h=AT2aFZUygS7VBnuTfeelgTq5K8exJcY7AxNbTsW1TEvMQQFfoa1Kf9oOUF8g9mCHoanMa9ukvT2mKDKLpTWavt8kSYVZNIR9Pv9e2dXURzPZyn1lCwGJj0GxFI6EFXdjI6ufTQ"><i class="fa-brands fa-instagram"></i></a> <a href="linkedin.com/in/pradeep-koirala-b22636202"><i class="fa-brands fa-linkedin"></i></a></td>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+        ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+          <!--Reference-->
+        <div id="container">
+            <div class="references">
+                <h1 class="heading">References</h1>
+                <h4 class="sub-heading">This website was created by Pradeep Koirala(2332918).</h4>
+                <div class="cards">
+                    <div class="card">
+                        <h3 class="title">Poppins Font</h3>
+                        <p class="desc">The entire website has the Poppins typeface, which is a font offered by Google Font Library.</p>
+                        <a href="https://fonts.google.com/specimen/Poppins?query=poppins" class="button">Visit Link</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="title">Youtube</h3>
+                        <p class="desc">I have taken some help from the Youtube as we are not so famaliar for java Script.</p>
+                        <a href="https://youtube.com/@EasyTutorialsVideo" class="button">Visit Link</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="title">Canva</h3>
+                        <p class="desc">I have used canva to create my logo which is used in nav bar.</p>
+                        <a href="https://canva.com" class="button">Visit Link</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="title">Font Awesome</h3>
+                        <p class="desc">I have used the Font Awesome library to incorporate various symbols into the site.</p>
+                        <a href="https://fontawesome.com" class="button">Visit Link</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="title">Color Hunt</h3>
+                        <p class="desc">I have used the color hunt library for various color palettes to make my website adorable.</p>
+                        <a href="https://colorhunt.co/" class="button">Visit Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright@2023--All Right Reserved--Developed By Pradeep</p>
+    </div>
+</body>
+</html>
